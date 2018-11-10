@@ -50,6 +50,9 @@ body {
   margin-right: -250px;
 }
 
+#menu-toggle1.clicked {
+  transform: rotate(180deg);
+}
 
 /* Sidebar Styles */
 

@@ -15,6 +15,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
 </head>
 
@@ -69,7 +70,7 @@
             <div class="container-fluid">
                 <h1>Predictions Project</h1>
                 <p>Welcome to our website</p>
-                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle">Toggle Menu</a>
+                <a id="menu-toggle1" href="menu-toggle1" class="glyphicon glyphicon-chevron-right" ></a>
             </div>
         </div>
         <!-- /#page-content-wrapper -->
@@ -83,9 +84,14 @@
 
     <!-- Menu Toggle Script -->
     <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
+
+    $(function() {
+        $('#menu-toggle1').click(function(e) {
+    		e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+        $('#menu-toggle1').toggleClass("clicked");
+    	});
+
     });
     </script>
 
