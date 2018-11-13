@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/simple-sidebar.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/index.html">
+                        The Predictions Project
+                    </a>
+                </li>
+                <li>
+                    <a href="/Pages/NFLPage/nfl.html">NFL</a>
+                </li>
+                <li>
+                    <a href="/Pages/NBAPage/nba.html">NBA</a>
+                </li>
+                <li>
+                    <a href="/Pages/CollegeFootballPage/cfb.html">College Football</a>
+                </li>
+                <li>
+                    <a href="/Pages/SoccerPage/soccer.html">Soccer</a>
+                </li>
+                <li>
+                    <a href="/Pages/MLBPage/mlb.html">MLB</a>
+                </li>
+                <li>
+                    <a href="/Pages/UFCPage/ufc.html">UFC</a>
+                </li>
+                <li>
+                    <a href="/Pages/BoxingPage/boxing.html">Boxing</a>
+                </li>
+                <li>
+                    <a href="/Pages/OtherPage/other.html">Other</a>
+                </li>
+                <li>
+                    <a href="/Pages/LoginPage/login.html">Login</a>
+                </li>
+                <li>
+                    <a href="/Pages/ContactPage/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <!-- <h1>Predictions Project</h1>
+                <p>Welcome to our website</p> -->
+                <a id="menu-toggle1" href="menu-toggle1" class="glyphicon glyphicon-chevron-right" ></a>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+
+    $(function() {
+        $('#menu-toggle1').click(function(e) {
+    		e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $('#menu-toggle1').toggleClass("clicked");
+    	});
+
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simple Sidebar - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="/css/simple-sidebar.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- wrapper -->
+  <div id="wrapper">
+    <!-- sidebar button -->
+    <div id=sidebar-placeholder >
+
+    </div>
+    <!-- sidebar button -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+        <h1>College Football Page</h1>
+
+        <!--get sidebar code for this page -->
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script>
+        $.get("/sidebar.html", function(data){
+            $("#sidebar-placeholder").replaceWith(data);
+        });
+        </script>
+        <!--get sidebar code for this page -->
+
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

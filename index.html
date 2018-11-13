@@ -20,80 +20,18 @@
 </head>
 
 <body>
+  <div id=sidebar-placeholder >
 
-    <div id="wrapper">
+  </div>
 
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a href="#">
-                        The Predictions Project
-                    </a>
-                </li>
-                <li>
-                    <a href="#">NFL</a>
-                </li>
-                <li>
-                    <a href="#">NBA</a>
-                </li>
-                <li>
-                    <a href="#">College Football</a>
-                </li>
-                <li>
-                    <a href="#">Soccer</a>
-                </li>
-                <li>
-                    <a href="#">MLB</a>
-                </li>
-                <li>
-                    <a href="#">UFC</a>
-                </li>
-                <li>
-                    <a href="#">Boxing</a>
-                </li>
-                <li>
-                    <a href="#">Other</a>
-                </li>
-                <li>
-                    <a href="./LoginPage/login.html">Login</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
+  <h1>Home Page</h1>
 
-        <!-- Page Content -->
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <h1>Predictions Project</h1>
-                <p>Welcome to our website</p>
-                <a id="menu-toggle1" href="menu-toggle1" class="glyphicon glyphicon-chevron-right" ></a>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-
-    $(function() {
-        $('#menu-toggle1').click(function(e) {
-    		e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-        $('#menu-toggle1').toggleClass("clicked");
-    	});
-
-    });
-    </script>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+  $.get("sidebar.html", function(data){
+      $("#sidebar-placeholder").replaceWith(data);
+  });
+  </script>
 
 </body>
 
