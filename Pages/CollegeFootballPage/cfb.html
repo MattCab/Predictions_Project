@@ -31,7 +31,7 @@
     <!-- Page Content -->
     <div id="page-content-wrapper">
 
-        <h1>College Football Page</h1>
+        <h1 align="center">College Football Page</h1>
 
         <!--get sidebar code for this page -->
         <script src="//code.jquery.com/jquery.min.js"></script>
@@ -41,6 +41,18 @@
         });
         </script>
         <!--get sidebar code for this page -->
+
+        <!-- footer -->
+        <div id=footer-placeholder >
+
+        </div>
+
+        <script>
+        $.get("/footer/footer.html", function(data){
+            $("#footer-placeholder").replaceWith(data);
+        });
+        </script>
+        <!-- footer -->
 
     </div>
     <!-- /#page-content-wrapper -->
